@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "tsc -p src",
+    "start": "nodemon build/dist/server.js",
+    "lint": "tslint src/**/*.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongodb": "^3.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^4.0.0",
+    "envfile": "^6.14.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs-extra": "^9.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.3.0",
+    "mongoose": "^5.11.17",
+    "mongoose-auto-increment": "^5.0.1",
+    "morgan": "^1.10.0",
+    "move-file": "^2.0.0",
+    "multer": "^1.4.2",
+    "swagger": "^0.7.5",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
